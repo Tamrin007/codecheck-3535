@@ -1,0 +1,10 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font: 16px Helvetica, Arial; height: 100%; }
+.container.messages { height: 90%; padding-bottom: 50px; overflow: scroll; }
+.container.msgform { background: #000; height: 50px; width: 100%; padding: 10px; position: fixed; bottom: 0px; }
+.form.msgform { height: 100%; }
+.form.msgform .input { height: 100%; border: 0; width: 90%; font-size: 18px; padding-left: 1%; margin-right: .5%; }
+.form.msgform .submit.button { width: 9%; height: 30px; background: rgb(130, 224, 255); border: none; padding: 10px; }
+.ul.messages { list-style-type: none; margin: 0; padding: 0; }
+.ul.messages li { padding: 5px 10px; }
+.message { padding-left: 2%; display: inline-block; }
