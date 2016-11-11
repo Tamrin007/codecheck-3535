@@ -4,10 +4,10 @@
   "description": "Sprint2 advanced challenge",
   "main": "index.js",
   "directories": {
-    "test": "tests"
+    "test": "test"
   },
   "scripts": {
-    "test": "mocha tests --recursive"
+    "test": "mocha test --recursive"
   },
   "repository": {
     "type": "git",
