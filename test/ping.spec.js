@@ -11,9 +11,9 @@ const HOST_URL = setWsProtocol(host_url);
 describe("bot ping", () => {
   it ("should return `pong` when mentioned with `bot`", done => {
     let user = new ws(HOST_URL);
-    let message = JSON.stringify({ text: "bot ping" });
+    let message = { text: "bot ping" };
     user.on("open", () => {
-      return user.send(message);
+      return user.send(JSON.stringify(message));
     });
     let cnt = 0;
     user.on("message", resp => {
@@ -22,7 +22,7 @@ describe("bot ping", () => {
       assert.equal(msg.success, true);
       switch (msg.type) {
         case "message":
-          assert.equal(msg.text, message); break;
+          assert.equal(msg.text, message.text); break;
         case "bot":
           assert.equal(msg.text, "pong"); break;
         default:
@@ -38,9 +38,9 @@ describe("bot ping", () => {
 
   it ("should return `pong` when mentioned with `@bot`", done => {
     let user = new ws(HOST_URL);
-    let message = JSON.stringify({ text: "@bot ping" });
+    let message = { text: "@bot ping" };
     user.on("open", () => {
-      return user.send(message);
+      return user.send(JSON.stringify(message));
     });
     let cnt = 0;
     user.on("message", resp => {
@@ -49,7 +49,7 @@ describe("bot ping", () => {
       assert.equal(msg.success, true);
       switch (msg.type) {
         case "message":
-          assert.equal(msg.text, message); break;
+          assert.equal(msg.text, message.text); break;
         case "bot":
           assert.equal(msg.text, "pong"); break;
         default:
@@ -65,9 +65,9 @@ describe("bot ping", () => {
 
   it ("should recognize with a text start with `bot:`", done => {
     let user = new ws(HOST_URL);
-    let message = JSON.stringify({ text: "bot:ping" });
+    let message = { text: "bot:ping" };
     user.on("open", () => {
-      return user.send(message);
+      return user.send(JSON.stringify(message));
     });
 
     let cnt = 0;
@@ -77,7 +77,7 @@ describe("bot ping", () => {
       assert.equal(msg.success, true);
       switch (msg.type) {
         case "message":
-          assert.equal(msg.text, message); break;
+          assert.equal(msg.text, message.text); break;
         case "bot":
           assert.equal(msg.text, "pong"); break;
         default:
