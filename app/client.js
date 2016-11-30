@@ -8,7 +8,8 @@ $(function () {
     // ws.onopen = function() {
     //   console.log('sent message: %s', $('#m').val());
     // };
-    ws.send($('#m').val());
+    var message = $('#m').val()
+    ws.send(JSON.stringify({"text": message}));
     $('#m').val('');
     return false;
   });

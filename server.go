@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"net/http"
 	"strings"
 
@@ -63,13 +64,13 @@ func wsHandler(c echo.Context) error {
 			resp.Text = "pong"
 		}
 
-		// respJSON, err := json.Marshal(resp)
-		// fmt.Println(string(respJSON))
-		// if err != nil {
-		// 	return err
-		// }
+		respJSON, err := json.Marshal(resp)
+		fmt.Println(string(respJSON))
+		if err != nil {
+			return err
+		}
 
-		err = ws.WriteJSON(resp)
+		err = ws.WriteMessage(websocket.TextMessage, respJSON)
 		if err != nil {
 			return err
 		}
