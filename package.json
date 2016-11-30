@@ -26,5 +26,8 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "ws": "^1.1.0"
+  },
+  "dependencies": {
+    "mocha": "^3.2.0"
   }
 }
