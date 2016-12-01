@@ -1,0 +1,105 @@
+{
+	"ImportPath": "github.com/Tamrin007/codecheck-3535",
+	"GoVersion": "go1.7",
+	"GodepVersion": "v75",
+	"Deps": [
+		{
+			"ImportPath": "github.com/dgrijalva/jwt-go",
+			"Comment": "v3.0.0-10-g9ed569b",
+			"Rev": "9ed569b5d1ac936e6494082958d63a6aa4fff99a"
+		},
+		{
+			"ImportPath": "github.com/gorilla/websocket",
+			"Comment": "v1.0.0-39-ge8f0f8a",
+			"Rev": "e8f0f8aaa98dfb6586cbdf2978d511e3199a960a"
+		},
+		{
+			"ImportPath": "github.com/labstack/echo",
+			"Comment": "v3.0.2-2-g7311000",
+			"Rev": "73110004efe2b93b1335bf751064acbab4634f65"
+		},
+		{
+			"ImportPath": "github.com/labstack/echo/middleware",
+			"Comment": "v3.0.2-2-g7311000",
+			"Rev": "73110004efe2b93b1335bf751064acbab4634f65"
+		},
+		{
+			"ImportPath": "github.com/labstack/gommon/bytes",
+			"Comment": "v0.1.0-1-g9a43ff0",
+			"Rev": "9a43ff0d261e0e65594422e9eee08cf301aabbe7"
+		},
+		{
+			"ImportPath": "github.com/labstack/gommon/color",
+			"Comment": "v0.1.0-1-g9a43ff0",
+			"Rev": "9a43ff0d261e0e65594422e9eee08cf301aabbe7"
+		},
+		{
+			"ImportPath": "github.com/labstack/gommon/log",
+			"Comment": "v0.1.0-1-g9a43ff0",
+			"Rev": "9a43ff0d261e0e65594422e9eee08cf301aabbe7"
+		},
+		{
+			"ImportPath": "github.com/labstack/gommon/random",
+			"Comment": "v0.1.0-1-g9a43ff0",
+			"Rev": "9a43ff0d261e0e65594422e9eee08cf301aabbe7"
+		},
+		{
+			"ImportPath": "github.com/mattn/go-colorable",
+			"Comment": "v0.0.6-9-gd228849",
+			"Rev": "d228849504861217f796da67fae4f6e347643f15"
+		},
+		{
+			"ImportPath": "github.com/mattn/go-isatty",
+			"Rev": "30a891c33c7cde7b02a981314b4228ec99380cca"
+		},
+		{
+			"ImportPath": "github.com/rsc/letsencrypt",
+			"Rev": "76104d26167d38b6a0010f42bfc8ec5487742e8b"
+		},
+		{
+			"ImportPath": "github.com/tylerb/graceful",
+			"Comment": "v1.2.13-2-g4df1190",
+			"Rev": "4df1190835320af7076dfcf27b3d071fd3612caf"
+		},
+		{
+			"ImportPath": "github.com/valyala/fasttemplate",
+			"Rev": "3b874956e03f1636d171bda64b130f9135f42cff"
+		},
+		{
+			"ImportPath": "github.com/xenolf/lego/acme",
+			"Comment": "v0.3.1-96-gcc94601",
+			"Rev": "cc94601612b43c3cf862a5ae5e2ec66fa5e64c89"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/ocsp",
+			"Rev": "ede567c8e044a5913dad1d1af3696d9da953104c"
+		},
+		{
+			"ImportPath": "golang.org/x/net/context",
+			"Rev": "4971afdc2f162e82d185353533d3cf16188a9f4e"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/unix",
+			"Rev": "b699b7032584f0953262cb2788a0ca19bb494703"
+		},
+		{
+			"ImportPath": "golang.org/x/time/rate",
+			"Rev": "f51c12702a4d776e4c1fa9b0fabab841babae631"
+		},
+		{
+			"ImportPath": "gopkg.in/square/go-jose.v1",
+			"Comment": "v1.1.0",
+			"Rev": "aa2e30fdd1fe9dd3394119af66451ae790d50e0d"
+		},
+		{
+			"ImportPath": "gopkg.in/square/go-jose.v1/cipher",
+			"Comment": "v1.1.0",
+			"Rev": "aa2e30fdd1fe9dd3394119af66451ae790d50e0d"
+		},
+		{
+			"ImportPath": "gopkg.in/square/go-jose.v1/json",
+			"Comment": "v1.1.0",
+			"Rev": "aa2e30fdd1fe9dd3394119af66451ae790d50e0d"
+		}
+	]
+}
