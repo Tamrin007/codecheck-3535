@@ -11,11 +11,12 @@ func main() {
 	e.Use(middleware.Logger())
 	e.Use(middleware.Recover())
 	e.Use(middleware.CORSWithConfig(middleware.DefaultCORSConfig))
+	e.Static("/", "app")
 
 	hub := ws.NewHub()
 	go hub.Run()
 
-	e.GET("/", echo.HandlerFunc(func(c echo.Context) error {
+	e.GET("/chat", echo.HandlerFunc(func(c echo.Context) error {
 		return ws.Handler(hub, c)
 	}))
 	e.Logger.Fatal(e.Start(":1323"))
