@@ -53,6 +53,10 @@
 			"Rev": "30a891c33c7cde7b02a981314b4228ec99380cca"
 		},
 		{
+			"ImportPath": "github.com/miekg/dns",
+			"Rev": "271c58e0c14f552178ea321a545ff9af38930f39"
+		},
+		{
 			"ImportPath": "github.com/rsc/letsencrypt",
 			"Rev": "76104d26167d38b6a0010f42bfc8ec5487742e8b"
 		},
@@ -76,6 +80,10 @@
 		},
 		{
 			"ImportPath": "golang.org/x/net/context",
+			"Rev": "4971afdc2f162e82d185353533d3cf16188a9f4e"
+		},
+		{
+			"ImportPath": "golang.org/x/net/publicsuffix",
 			"Rev": "4971afdc2f162e82d185353533d3cf16188a9f4e"
 		},
 		{
