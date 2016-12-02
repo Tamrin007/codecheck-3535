@@ -1,6 +1,6 @@
 'use strict';
 
-var ws = new WebSocket('ws://localhost:1323/chat');
+var ws = new WebSocket('ws://104.198.123.78/chat');
 
 $(function () {
   $('form').submit(function(){
