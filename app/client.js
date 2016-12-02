@@ -1,6 +1,6 @@
 'use strict';
 
-var ws = new WebSocket('ws://104.198.123.78/chat');
+var ws = new WebSocket('ws://sprint.tamrin.tech/chat');
 
 $(function () {
   $('form').submit(function(){
